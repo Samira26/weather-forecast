@@ -3,36 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city" required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Tuesday 12:15, broken clouds
-          <br />
-          Humidity: 84%, Wind: 5.14km/h
-        </p>
-      </div>
-      <div>🌤️ 12°C</div>
-    </main>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city" required />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>Paris</h1>
+          <p>
+            Tuesday 12:15, broken clouds
+            <br />
+            Humidity: 84%, Wind: 5.14km/h
+          </p>
+        </div>
+        <div>🌤️ 12°C</div>
+      </main>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/Samira26" target="_blank">Samira Mohamed</a>
-      and is on
-      <a href="https://github.com/Samira26/weather-forecast" target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://weerbericht-app.netlify.app/" target="_blank">Netlify</a>
-    </footer>
+      <footer>
+        Coded by
+        <a href="https://github.com/Samira26" target="_blank">Samira Mohamed</a>
+        and is on
+        <a href="https://github.com/Samira26/weather-forecast" target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://weerbericht-app.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
