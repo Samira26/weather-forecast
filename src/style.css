@@ -11,3 +11,27 @@ body {
   border-radius: 16px;
   padding: 30px;
 }
+
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 20px 0;
+}
+
+.search-form-input {
+  background-color: #f9f7fe;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 76%;
+  padding: 15px 20px;
+}
+
+.search-button {
+  background-color: #885df1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 15px 40px;
+  margin-left: 5px;
+}
