@@ -74,9 +74,8 @@ main {
   display: flex;
 }
 
-.temperature-emoji {
-  font-size: 55px;
-  margin-top: 3px;
+.temperature-icon {
+  width: 100%;
 }
 .temperature-element {
   font-size: 88px;

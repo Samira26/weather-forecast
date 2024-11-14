@@ -7,15 +7,21 @@ function displayTemperature(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let currentDateElement = document.querySelector("#current-date");
   let date = new Date(response.data.time * 1000);
+  let weatherIconElement = document.querySelector("#weather-icon");
 
   console.log(response.data);
 
   searchElement.innerHTML = response.data.city;
-  temperatureElement.innerHTML = Math.round(temperature);
   currentDateElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+  temperatureElement.innerHTML = Math.round(temperature);
+  weatherIconElement.innerHTML = `<img
+                src="${response.data.condition.icon_url}"
+                alt=""
+                class="temperature-emoji"
+              />`;
 }
 
 function formatDate(date) {
